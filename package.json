@@ -2,12 +2,11 @@
     "name": "alpha",
     "version": "1.0.0",
     "main": "alpha.js",
-    "start": "alpha.js",
     "engines": {
         "node": "12.x"
     },
     "scripts": {
-        "start": "node app.js"
+        "start": "node alpha.js"
     },
     "dependencies": {
         "axios": "^0.19.2",

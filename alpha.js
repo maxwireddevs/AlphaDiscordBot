@@ -92,27 +92,48 @@ const comfyEmbed14= new Discord.MessageEmbed()
 const scareEmbed= new Discord.MessageEmbed()
 	.setTitle(';-;')
 	.setColor('#555555')
-	.setImage(url='https://i.imgur.com/jy2EgzV.gif')
+	.setImage(url='https://i.imgur.com/BJPVXoK.gif')
 
 const boredEmbed= new Discord.MessageEmbed()
 	.setTitle('Hmm...')
 	.setColor('#555555')
-	.setImage(url='https://i.imgur.com/FljhcLG.gif')
+	.setImage(url='https://i.imgur.com/u8WmuAO.gif')
 
 const photoEmbed= new Discord.MessageEmbed()
 	.setTitle('Say cheese!')
 	.setColor('#555555')
-	.setImage(url='https://i.imgur.com/y7jr3a8.gif')
+	.setImage(url='https://i.imgur.com/gNv4bBn.gif')
 
 const unpackEmbed= new Discord.MessageEmbed()
 	.setTitle('What could be inside?')
 	.setColor('#555555')
-	.setImage(url='https://i.imgur.com/d5nrnbZ.gif')
+	.setImage(url='https://i.imgur.com/MetIGcs.gif')
 
 const byeEmbed= new Discord.MessageEmbed()
 	.setTitle('Until we meet again...')
 	.setColor('#555555')
-	.setImage(url='https://i.imgur.com/WuHuOK4.gif')
+	.setImage(url='https://i.imgur.com/YlQ2FK0.gif')
+
+const coffeeEmbed= new Discord.MessageEmbed()
+	.setTitle('Some coffee would be nice...')
+	.setColor('#555555')
+	.setImage(url='https://i.imgur.com/nliXcu5.gif')
+
+const tasteEmbed= new Discord.MessageEmbed()
+	.setTitle('Let me taste it- Ugh???')
+	.setColor('#555555')
+	.setImage(url='https://i.imgur.com/4j3usy7.gif')
+
+const guitarEmbed= new Discord.MessageEmbed()
+	.setTitle('Just me and my guitar...')
+	.setColor('#555555')
+	.setImage(url='https://i.imgur.com/ySp4TJy.gif')
+
+const eheheEmbed= new Discord.MessageEmbed()
+	.setTitle('Ehehe...')
+	.setColor('#555555')
+	.setImage(url='https://i.imgur.com/Ltdg1I1.gif')
+
 
 const embedLookupTable = {
 0: comfyEmbed1,
@@ -149,59 +170,66 @@ bot.on("message", (message) => {
     if (message.author.username === botName) {
         return;
     }
-
 	if(message.content.indexOf("a!")!== -1){
-
-if (message.content === "a!comfy") {
-        message.channel.send(embedLookupTable[currentEmbed]);
-	if(currentEmbed<14){
-	currentEmbed++;
-	}
-	else{
-	currentEmbed=0;
-	}
-	
-    }
-
-else if(message.content === "a!scary"){
-	message.channel.send(scareEmbed);
-}
-
-else if(message.content === "a!bored"){
-	message.channel.send(boredEmbed);
-}
-
-else if(message.content === "a!photo"){
-	message.channel.send(photoEmbed);
-}
-
-else if(message.content === "a!unpack"){
-	message.channel.send(unpackEmbed);
-}
-
-else if(message.content === "a!bye"){
-	message.channel.send(byeEmbed);
-}
-
-else if(message.content ==="a!link"){
-	message.channel.send("https://discord.com/api/oauth2/authorize?client_id=718773791945261097&permissions=378944&scope=bot");
-}
-
-else if (message.content.indexOf("a!weather") !== -1) {
-        let params = message.content.split("in");
-        let queryParameter = params[1].trim();
-
-        message.channel.startTyping();
-        fetchWeatherConditions(queryParameter, (result) => {
-            let weather = parseWeatherConditions(result);
-
-            let temperature = result["current"].temp_c + "℃" + " - " + result["current"].temp_f + "℉";
-            message.channel.send("The weather currently is: " + weather + " and the :thermometer:" + temperature);
-            message.channel.stopTyping();
-        });
-    } 
-}
-});
+		if (message.content.indexOf("a!weather") !== -1) {
+        		let params = message.content.split("in");
+        		let queryParameter = params[1].trim();
+        		message.channel.startTyping();
+        		fetchWeatherConditions(queryParameter, (result) => {
+           			let weather = parseWeatherConditions(result);
+            			let temperature = result["current"].temp_c + "℃" + " - " + result["current"].temp_f + "℉";
+            			message.channel.send("The weather currently is: " + weather + " and the :thermometer:" + temperature);
+            			message.channel.stopTyping();
+        		});
+		}
+		else{
+			switch(message.content){
+			case "a!comfy":
+		       		message.channel.send(embedLookupTable[currentEmbed]);
+				if(currentEmbed<14){
+					currentEmbed++;
+				}
+				else{
+					currentEmbed=0;
+				}
+				break;
+			case "a!scared":
+				message.channel.send(scareEmbed);
+				break;
+			case "a!bored":
+				message.channel.send(boredEmbed);
+				break;
+			case "a!photo":
+				message.channel.send(photoEmbed);
+				break;
+			case "a!unpack":
+				message.channel.send(unpackEmbed);
+				break;
+			case "a!bye":
+				message.channel.send(byeEmbed);
+				break;
+			case "a!coffee":
+				message.channel.send(coffeeEmbed);
+				break;
+			case "a!taste":
+				message.channel.send(tasteEmbed);
+				break;
+			case "a!guitar":
+				message.channel.send(guitarEmbed);
+				break;
+			case "a!ehehe":
+				message.channel.send(eheheEmbed);
+				break;
+			case "a!help":
+				message.channel.send("Available commands: comfy, scared, bored, photo, unpack, bye, coffee, taste, guitar, ehehe, weather in <city name>");
+				break;
+			case "a!link":
+				message.channel.send("https://discord.com/api/oauth2/authorize?client_id=718773791945261097&permissions=378944&scope=bot");
+				break;
+				}
+			}	
+		}	
+	});
 
 /**
  *

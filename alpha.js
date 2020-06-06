@@ -24,8 +24,6 @@ const weatherLookupTable = {
 "1246": ":cloud_tornado:"
 };
 
-
-
 var key = require("./_keys.js");
 const Discord = require("discord.js");
 const bot = new Discord.Client();
@@ -42,7 +40,6 @@ const comfyEmbed1= new Discord.MessageEmbed()
 const comfyEmbed2= new Discord.MessageEmbed()
 	.setColor('#555555')
 	.setImage('https://static.zerochan.net/Alpha.Hatsuseno.full.434695.jpg')
-
 
 const comfyEmbed3= new Discord.MessageEmbed()
 	.setColor('#555555')
@@ -80,6 +77,18 @@ const comfyEmbed11= new Discord.MessageEmbed()
 	.setColor('#555555')
 	.setImage('https://static.zerochan.net/Yokohama.Kaidashi.Kikou.full.434693.jpg')
 
+const comfyEmbed12= new Discord.MessageEmbed()
+	.setColor('#555555')
+	.setImage('https://s1.zerochan.net/Alpha.Hatsuseno.600.1781274.jpg')
+
+const comfyEmbed13= new Discord.MessageEmbed()
+	.setColor('#555555')
+	.setImage('https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.434693.jpg')
+
+const comfyEmbed14= new Discord.MessageEmbed()
+	.setColor('#555555')
+	.setImage('https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.434682.jpg')
+
 const scareEmbed= new Discord.MessageEmbed()
 	.setTitle(';-;')
 	.setColor('#555555')
@@ -116,7 +125,10 @@ const embedLookupTable = {
 7: comfyEmbed8,
 8: comfyEmbed9,
 9: comfyEmbed10,
-10: comfyEmbed11
+10: comfyEmbed11,
+11: comfyEmbed12,
+12: comfyEmbed13,
+13: comfyEmbed14
 };
 
 
@@ -142,7 +154,7 @@ bot.on("message", (message) => {
 
 if (message.content === "a!comfy") {
         message.channel.send(embedLookupTable[currentEmbed]);
-	if(currentEmbed<11){
+	if(currentEmbed<14){
 	currentEmbed++;
 	}
 	else{

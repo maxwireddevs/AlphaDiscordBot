@@ -8,7 +8,6 @@
     },
     "scripts": {
         "start": "alpha.js",
-        "build": "heroku/nodejs"
     },
     "dependencies": {
         "axios": "^0.19.2",

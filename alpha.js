@@ -24,13 +24,12 @@ const weatherLookupTable = {
 "1246": ":cloud_tornado:"
 };
 
-var key = require("./_keys.js");
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const axios = require('axios');
 
 const mainURL = 'https://api.weatherapi.com/v1/current.json'; // &q=Athens
-const weatherKey = "key=" + key.weatherapi;
+const weatherKey = "key=" + process.env.weatherapi;
 const botName = "alpha";
 
 const comfyEmbed1= new Discord.MessageEmbed()
@@ -160,7 +159,7 @@ bot.once('ready', () => {
 	console.log('Ready');
 });
 
-bot.login(key.key);
+bot.login(process.env.bot_token);
 
 
 

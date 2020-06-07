@@ -137,7 +137,7 @@ const eheheEmbed= new Discord.MessageEmbed()
 	.setColor('#555555')
 	.setImage(url='https://i.imgur.com/Ltdg1I1.gif')
 
-const welcomeEmbed= new Discord.MessageEmber()
+const welcomeEmbed= new Discord.MessageEmbed()
 	.setTitle('Welcome!')
 	.setColor('#555555')
 	.setImage(url='https://i.imgur.com/M2y6LGl.gif')

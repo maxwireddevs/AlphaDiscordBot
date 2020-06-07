@@ -109,7 +109,7 @@ const comfyLookupTable = {
 };
 
 const embedLookupTable = {
-	"scare": {
+	"scared": {
 		"title": ";-;",
 		"color": "#555555",
 		"link": "https://i.imgur.com/BJPVXoK.gif"
@@ -216,6 +216,7 @@ bot.on("message", (message) => {
 					.setColor(embedData["color"])
 					.setImage(embedData["link"])
 
+				message.channel.send(embed)
 				break;
 
 			case "weather":

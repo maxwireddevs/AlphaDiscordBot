@@ -334,7 +334,7 @@ bot.on("message", (message) => {
 				break;	
 
 			case "help":
-				message.channel.send("Available commands: comfy, scared, bored, photo, unpack, bye, coffee, welcome, taste, guitar, ehehe, weather in <city name>, link");
+				message.channel.send("Available commands: comfy, scared, bored, photo, unpack, bye, coffee, welcome, taste, guitar, ehehe, kanji, weather in <city name>, link");
 				break;
 
 			case "link":

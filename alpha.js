@@ -322,7 +322,7 @@ bot.on("message", (message) => {
 				break;
 				
 			case "kanji":
-				randomnumber= 2136 * Math.random();
+				randomnumber= Math.floor(Math.random() * 2136);
 				let embedKanji = new Discord.MessageEmbed()
 					.setTitle(kanjiarray[randomnumber])
 					.setDescription(readarray[randomnumber])

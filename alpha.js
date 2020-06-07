@@ -168,6 +168,12 @@ const embedLookupTable = {
 		"color": "#555555",
 		"link": "https://i.imgur.com/M2y6LGl.gif"
 	},
+
+	"splash": {
+		"title": "SPLASH!",
+		"color": "#555555",
+		"link": "https://failureforums.ddns.net/static/files/2020-06-07_142035.066537-1589435715829.gif"
+	}
 };
 
 function chooseRandomFromObject(obj) {

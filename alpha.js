@@ -172,7 +172,7 @@ const embedLookupTable = {
 	"splash": {
 		"title": "SPLASH!",
 		"color": "#268F69",
-		"link": "https://failureforums.ddns.net/static/files/2020-06-07_142035.066537-1589435715829.gif"
+		"link": "https://i.imgur.com/NuMArjc.gif"
 	}
 };
 

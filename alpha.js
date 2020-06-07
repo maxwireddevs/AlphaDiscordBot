@@ -261,7 +261,7 @@ const embedLookupTable = {
 var currentobject=0;
 
 function chooseIncrementFromObject(obj) {
-	if(currentobject<14){
+	if(currentobject<Object.keys(obj).length){
 		currentobject++;
 	}
 	else{

@@ -156,7 +156,7 @@ const embedLookupTable = {
 10: comfyEmbed11,
 11: comfyEmbed12,
 12: comfyEmbed13,
-13: comfyEmbed14
+13: comfyEmbed14,
 14: comfyEmbed15	
 };
 

@@ -176,9 +176,17 @@ const embedLookupTable = {
 	}
 };
 
-function chooseRandomFromObject(obj) {
+var currentobject=0;
+
+function chooseIncrementFromObject(obj) {
+	if(currentobject<15){
+		currentobject++;
+	}
+	else{
+		currentobject=0;
+	}	
 	var keys = Object.keys(obj);
-	return obj[keys[keys.length * Math.random() << 0]];
+	return obj[keys[currentobject]];
 };
 
 const bot = new Discord.Client();
@@ -211,7 +219,7 @@ bot.on("message", (message) => {
 
 		switch(command_string) {
 			case "comfy":
-				let embedData = chooseRandomFromObject(comfyLookupTable);
+				let embedData = chooseIncrementFromObject(comfyLookupTable);
 				let embed = new Discord.MessageEmbed()
 					.setColor(embedData["color"])
 					.setImage(embedData["link"])

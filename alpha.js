@@ -322,12 +322,11 @@ bot.on("message", (message) => {
 				break;
 				
 			case "kanji":
-				let embedData = chooseRandomFromObject(kanjiLookupTable);
 				randomnumber= 2136 * Math.random();
-				let embed = new Discord.MessageEmbed()
+				let embedKanji = new Discord.MessageEmbed()
 					.setTitle(kanjiarray[randomnumber])
 					.setDescription(readarray[randomnumber])
-				message.channel.send(embed);
+				message.channel.send(embedKanji);
 				break;	
 
 			case "help":

@@ -232,7 +232,7 @@ bot.on("message", (message) => {
 				message.channel.send(welcomeEmbed);
 				break;
 			case "a!help":
-				message.channel.send("Available commands: comfy, scared, bored, photo, unpack, bye, coffee, taste, guitar, ehehe, weather in <city name>");
+				message.channel.send("Available commands: comfy, scared, bored, photo, unpack, bye, coffee, welcome, taste, guitar, ehehe, weather in <city name>, link");
 				break;
 			case "a!link":
 				message.channel.send("https://discord.com/api/oauth2/authorize?client_id=718773791945261097&permissions=378944&scope=bot");

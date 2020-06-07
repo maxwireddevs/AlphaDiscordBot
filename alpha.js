@@ -327,7 +327,7 @@ bot.on("message", (message) => {
 				let embed = new Discord.MessageEmbed()
 					.setTitle(kanjiarray[randomnumber])
 					.setDescription(readarray[randomnumber])
-				message.channel.send();
+				message.channel.send(embed);
 				break;	
 
 			case "help":

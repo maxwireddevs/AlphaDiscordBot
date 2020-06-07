@@ -88,6 +88,10 @@ const comfyEmbed14= new Discord.MessageEmbed()
 	.setColor('#555555')
 	.setImage('https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.434682.jpg')
 
+const comfyEmbed15= new Discord.MessageEmbed()
+	.setColor('#555555')
+	.setImage('https://static.zerochan.net/Alpha.Hatsuseno.full.434690.jpg')
+
 const scareEmbed= new Discord.MessageEmbed()
 	.setTitle(';-;')
 	.setColor('#555555')
@@ -133,6 +137,10 @@ const eheheEmbed= new Discord.MessageEmbed()
 	.setColor('#555555')
 	.setImage(url='https://i.imgur.com/Ltdg1I1.gif')
 
+const welcomeEmbed= new Discord.MessageEmber()
+	.setTitle('Welcome!')
+	.setColor('#555555')
+	.setImage(url='https://i.imgur.com/M2y6LGl.gif')
 
 const embedLookupTable = {
 0: comfyEmbed1,
@@ -149,6 +157,7 @@ const embedLookupTable = {
 11: comfyEmbed12,
 12: comfyEmbed13,
 13: comfyEmbed14
+14: comfyEmbed15	
 };
 
 
@@ -185,7 +194,7 @@ bot.on("message", (message) => {
 			switch(message.content){
 			case "a!comfy":
 		       		message.channel.send(embedLookupTable[currentEmbed]);
-				if(currentEmbed<14){
+				if(currentEmbed<15){
 					currentEmbed++;
 				}
 				else{
@@ -218,6 +227,9 @@ bot.on("message", (message) => {
 				break;
 			case "a!ehehe":
 				message.channel.send(eheheEmbed);
+				break;
+			case "a!welcome":
+				message.channel.send(welcomeEmbed);
 				break;
 			case "a!help":
 				message.channel.send("Available commands: comfy, scared, bored, photo, unpack, bye, coffee, taste, guitar, ehehe, weather in <city name>");

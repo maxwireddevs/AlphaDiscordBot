@@ -179,7 +179,7 @@ const embedLookupTable = {
 var currentobject=0;
 
 function chooseIncrementFromObject(obj) {
-	if(currentobject<15){
+	if(currentobject<14){
 		currentobject++;
 	}
 	else{

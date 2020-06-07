@@ -231,6 +231,9 @@ bot.on("message", (message) => {
 			case "a!welcome":
 				message.channel.send(welcomeEmbed);
 				break;
+			case "a!":
+				message.channel.send(welcomeEmbed);
+				break;		
 			case "a!help":
 				message.channel.send("Available commands: comfy, scared, bored, photo, unpack, bye, coffee, welcome, taste, guitar, ehehe, weather in <city name>, link");
 				break;

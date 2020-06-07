@@ -33,77 +33,77 @@ const botName = "alpha";
 
 const comfyLookupTable = {
 	"comfyEmbed1": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://static.zerochan.net/Yokohama.Kaidashi.Kikou.full.434673.jpg",
 	},
 
 	"comfyEmbed2": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://static.zerochan.net/Alpha.Hatsuseno.full.434695.jpg",
 	},
 
 	"comfyEmbed3": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://static.zerochan.net/Yokohama.Kaidashi.Kikou.full.434689.jpg",
 	},
 
 	"comfyEmbed4": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.434675.jpg",
 	},
 
 	"comfyEmbed5": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://static.zerochan.net/Yokohama.Kaidashi.Kikou.full.434312.jpg",
 	},
 
 	"comfyEmbed6": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.434285.jpg",
 	},
 
 	"comfyEmbed7": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.445870.jpg",
 	},
 
 	"comfyEmbed8": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.445859.jpg",
 	},
 
 	"comfyEmbed9": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.445868.jpg",
 	},
 
 	"comfyEmbed10": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://static.zerochan.net/Alpha.Hatsuseno.full.445865.jpg",
 	},
 
 	"comfyEmbed11": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://static.zerochan.net/Yokohama.Kaidashi.Kikou.full.434693.jpg",
 	},
 
 	"comfyEmbed12": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://s1.zerochan.net/Alpha.Hatsuseno.600.1781274.jpg",
 	},
 
 	"comfyEmbed13": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.434693.jpg",
 	},
 
 	"comfyEmbed14": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://s1.zerochan.net/Yokohama.Kaidashi.Kikou.600.434682.jpg",
 	},
 
 	"comfyEmbed15": {
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://static.zerochan.net/Alpha.Hatsuseno.full.434690.jpg",
 	},
 };
@@ -111,67 +111,67 @@ const comfyLookupTable = {
 const embedLookupTable = {
 	"scare": {
 		"title": ";-;",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/BJPVXoK.gif"
 	},
 
 	"bored": {
 		"title": "Hmm...",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/u8WmuAO.gif"
 	},
 
 	"photo": {
 		"title": "Say cheese!",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/gNv4bBn.gif"
 	},
 
 	"unpack": {
 		"title": "What could be inside?",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/MetIGcs.gif"
 	},
 
 	"bye": {
 		"title": "Until we meet again...",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/YlQ2FK0.gif"
 	},
 
 	"coffee": {
 		"title": "Some coffee would be nice...",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/nliXcu5.gif"
 	},
 
 	"taste": {
 		"title": "Let me taste it- Ugh???",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/4j3usy7.gif"
 	},
 
 	"guitar": {
 		"title": "Just me and my guitar...",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/ySp4TJy.gif"
 	},
 
 	"ehehe": {
 		"title": "Ehehe...",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/Ltdg1I1.gif"
 	},
 
 	"welcome": {
 		"title": "Welcome!",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://i.imgur.com/M2y6LGl.gif"
 	},
 
 	"splash": {
 		"title": "SPLASH!",
-		"color": "#555555",
+		"color": "#268F69",
 		"link": "https://failureforums.ddns.net/static/files/2020-06-07_142035.066537-1589435715829.gif"
 	}
 };

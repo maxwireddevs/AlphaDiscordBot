@@ -351,8 +351,11 @@ bot.on("message", (message) => {
 			case "gather":
 				message.channel.fetch({ limit: 100 })
   					.then(async messages => {
-    					const putInArray = async (data) => traindata.push(data);
-    					for (const message of messages.array().reverse()) await putInArray(`${msg.content}`); 
+					let finalArray = [];
+    					const putInArray = async (data) => finalArray.push(data);
+    					for (const message of messages.array().reverse()) await putInArray(`${msg.content}`);
+					console.log(finalArray);
+    					console.log(finalArray.length);
 					});
 				break;	
 

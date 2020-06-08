@@ -353,6 +353,7 @@ bot.on("message", (message) => {
   				let embedGather = new Discord.MessageEmbed().setTitle('Fecthed messages');
 				message.channel.messages.fetch({ limit: x }).then(messages => {
   					let arr = messages.array();
+					embedGather.addField("size",arr.length);
  					for (let i = 0; i < arr.length; i++){
     						let curr = arr[i],
       						str = curr.content;

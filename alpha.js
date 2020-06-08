@@ -328,10 +328,6 @@ bot.on("message", (message) => {
 
 				break;
 				
-			case "nuke":
-				message.channel.send("https://www.youtube.com/watch?v=mEtldt-FI8Y&t=14s");
-				break;	
-				
 			case "kanji":
 				randomnumber= Math.floor(Math.random() * 2136);
 				let embedKanji = new Discord.MessageEmbed()
@@ -345,7 +341,7 @@ bot.on("message", (message) => {
 				break;	
 
 			case "help":
-				message.channel.send("Available commands: comfy, scared, bored, photo, unpack, bye, coffee, welcome, taste, guitar, ehehe, splash, nuke, kanji, weather in <city name>, link");
+				message.channel.send("Available commands: comfy, scared, bored, photo, unpack, bye, coffee, welcome, taste, guitar, ehehe, splash, kanji, weather in <city name>, link");
 				break;
 
 			case "link":

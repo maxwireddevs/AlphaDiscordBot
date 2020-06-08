@@ -353,10 +353,11 @@ bot.on("message", (message) => {
   				let embedGather = new Discord.MessageEmbed().setTitle('Fecthed messages');
 				message.channel.messages.fetch({ limit: x }).then(messages => {
   					let arr = message.channel.messages.array();
+					embedGather.addField("length",arr.length);
  					for (let i = 0; i < arr.length; i++){
     						let curr = arr[i],
       						str = curr.content;
-    						embedGather.addField(str);
+    						embedGather.addField("message",str);
   					}
 					}).catch(console.error);
 				message.channel.send(embedGather);

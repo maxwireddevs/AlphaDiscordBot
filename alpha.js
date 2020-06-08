@@ -31,7 +31,8 @@ const axios = require("axios");
 const mainURL = "https://api.weatherapi.com/v1/current.json"; // &q=Athens
 const weatherKey = "key=" + process.env.weatherapi;
 const botName = "alpha";
-const arrays = require("./arrays");
+import * as arrays from "./arrays"
+
 const kanjiLookupTable = {
 	"comfyEmbed1": {
 		"color": "#268F69",

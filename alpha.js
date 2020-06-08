@@ -351,9 +351,8 @@ bot.on("message", (message) => {
 			case "gather":
     				let x = 10;
   				let embedGather = new Discord.MessageEmbed().setTitle('Fecthed messages');
-				embedGather.addField("length",x);
 				message.channel.messages.fetch({ limit: x }).then(messages => {
-  					let arr = message.channel.messages.array();
+  					let arr = messages;
  					for (let i = 0; i < arr.length; i++){
     						let curr = arr[i],
       						str = curr.content;

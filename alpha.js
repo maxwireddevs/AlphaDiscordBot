@@ -275,7 +275,7 @@ function chooseIncrementFromObject(obj) {
 	var keys = Object.keys(obj);
 	return obj[keys[currentobject]];
 };
-
+var traindata = require('./traindata.json');
 const bot = new Discord.Client();
 var randomnumber=0;
 var _message = {};
@@ -347,6 +347,13 @@ bot.on("message", (message) => {
 				randomost= Math.floor(Math.random() * Object.keys(ost).length);
 				message.channel.send(ost[randomost]);
 				break;
+				
+			case "gather":
+				message.channel.fetchMessages().then(async messages => {
+    					const putInArray = async (data) => traindata.push(data);
+    					for (const message of messages.array().reverse()) await putInArray(`${msg.content}`); 
+				});
+				break;	
 
 			case "link":
 				message.channel.send("https://discord.com/api/oauth2/authorize?client_id=718773791945261097&permissions=378944&scope=bot");

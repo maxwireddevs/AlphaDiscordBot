@@ -349,10 +349,11 @@ bot.on("message", (message) => {
 				break;
 				
 			case "gather":
-				message.channel.fetchMessages().then(async messages => {
+				message.channel.fetch({ limit: limit })
+  					.then(async messages => {
     					const putInArray = async (data) => traindata.push(data);
     					for (const message of messages.array().reverse()) await putInArray(`${msg.content}`); 
-				});
+					});
 				break;	
 
 			case "link":

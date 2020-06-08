@@ -359,8 +359,9 @@ bot.on("message", (message) => {
     						if (str.length > 2048) str = str.substring(0, 2045) + '...';
     						embedGather.addField(curr.author, str);
   					}
+					message.channel.send("Array length: " + arr.length);
 					}).catch(console.error);
-				message.channel.send("Array length: " + arr.length);
+				
 				break;	
 
 			case "link":

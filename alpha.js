@@ -349,14 +349,14 @@ bot.on("message", (message) => {
 				break;
 				
 			case "gather":
+				let finalArray = [];
 				message.channel.fetch({ limit: 100 })
   					.then(async messages => {
-					let finalArray = [];
     					const putInArray = async (data) => finalArray.push(data);
     					for (const message of messages.array().reverse()) await putInArray(`${msg.content}`);
 					console.log(finalArray);
-    					console.log(finalArray.length);
 					});
+				message.channel.send(finalArray.length);
 				break;	
 
 			case "link":

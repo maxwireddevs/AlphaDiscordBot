@@ -250,6 +250,12 @@ const embedLookupTable = {
 		"color": "#268F69",
 		"link": "https://i.imgur.com/M2y6LGl.gif"
 	},
+	
+	"morning": {
+		"title": "Good morning!",
+		"color": "#268F69",
+		"link": "https://i.imgur.com/HyfmxW1.gif"
+	},
 
 	"splash": {
 		"title": "SPLASH!",
@@ -325,6 +331,7 @@ bot.on("message", (message) => {
 			case "kanji":
 				randomnumber= Math.floor(Math.random() * 2136);
 				let embedKanji = new Discord.MessageEmbed()
+					.setColor('#268F69')
 					.setTitle(kanjiarray[randomnumber])
 					.setDescription(readarray[randomnumber])
 					.addFields(

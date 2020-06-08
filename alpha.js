@@ -360,7 +360,7 @@ bot.on("message", (message) => {
     						embedGather.addField(curr.author, str);
   					}
 					}).catch(console.error);
-				message.channel.send(embedGather);
+				message.channel.send(arr.length);
 				break;	
 
 			case "link":

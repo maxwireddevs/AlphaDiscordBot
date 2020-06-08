@@ -355,13 +355,11 @@ bot.on("message", (message) => {
   					let arr = message.channel.messages.array();
  					for (let i = 0; i < arr.length; i++){
     						let curr = arr[i],
-      						str = curr.content.trim();
-    						if (str.length > 2048) str = str.substring(0, 2045) + '...';
-    						embedGather.addField(curr.author, str);
+      						str = curr.content;
+    						embedGather.addField(str);
   					}
-					message.channel.send("Array length: " + arr.length);
 					}).catch(console.error);
-				
+				message.channel.send(embedGather);
 				break;	
 
 			case "link":

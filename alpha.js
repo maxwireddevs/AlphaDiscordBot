@@ -351,8 +351,8 @@ bot.on("message", (message) => {
 			case "gather":
     				let x = 10;
   				embed = new Discord.RichEmbed().setTitle('Fecthed messages');
-				message.channel.fetchMessages({ limit: x }).then(messages => {
-  					let arr = messages.array();
+				message.channel.messages.fetch({ limit: x }).then(messages => {
+  					let arr = message.channel.messages.array();
  					for (let i = 0; i < arr.length; i++){
     						let curr = arr[i],
       						str = curr.content.trim();

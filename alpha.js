@@ -353,13 +353,14 @@ bot.on("message", (message) => {
   				let embedGather = new Discord.MessageEmbed().setTitle('Fecthed messages');
 				message.channel.messages.fetch({ limit: x }).then(messages => {
   					let arr = messages.array();
-					embedGather.addField("size",arr.length);
+					embedGather.addField("size",x);
  					for (let i = 0; i < arr.length; i++){
     						let curr = arr[i],
       						str = curr.content;
     						embedGather.addField("message",str);
   					}
 					}).catch(console.error);
+				message.channel.send(embedGather)
 				break;	
 
 			case "link":

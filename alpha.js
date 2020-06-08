@@ -349,9 +349,18 @@ bot.on("message", (message) => {
 				break;
 				
 			case "gather":
-    				const putInArray = async (data) => traindata.push(data);
-    				putInArray("test2");
-				message.channel.send(traindata.length);
+    				let x = 10;
+  				embed = new Discord.RichEmbed().setTitle('Fecthed messages');
+				message.channel.fetchMessages({ limit: x }).then(messages => {
+  					let arr = messages.array();
+ 					for (let i = 0; i < arr.length; i++){
+    						let curr = arr[i],
+      						str = curr.content.trim();
+    						if (str.length > 2048) str = str.substring(0, 2045) + '...';
+    						embed.addField(curr.author, str);
+  					}
+					}).catch(console.error);
+				message.channel.send(embed);
 				break;	
 
 			case "link":

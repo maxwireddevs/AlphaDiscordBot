@@ -350,7 +350,7 @@ bot.on("message", (message) => {
 				
 			case "gather":
   				let embedGather = new Discord.MessageEmbed().setTitle('Fecthed messages');
-				message.channel.messages.fetch({ limit: 10 }).then(messages => {
+				message.channel.messages.fetch({ max : 10 }).then(messages => {
   					let arr = messages.array();
 					embedGather.addField("size",10);
  					for (let i = 0; i < arr.length; i++){

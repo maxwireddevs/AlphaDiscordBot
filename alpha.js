@@ -281,6 +281,11 @@ const embedLookupTable = {
 		"color": "#268F69",
 		"link": "https://i.imgur.com/CWe13xa.gif"
 	},
+"goldencatrun": {
+		"title": "",
+		"color": "#268F69",
+		"link": "https://i.imgur.com/6tCTiJs.gif"
+	},
 	"dangoparty": {
 		"title": "",
 		"color": "#268F69",

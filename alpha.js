@@ -261,6 +261,11 @@ const embedLookupTable = {
 		"color": "#268F69",
 		"link": "https://i.imgur.com/NuMArjc.gif"
 	}
+	"whitecat": {
+		"title": "whitecat.gif",
+		"color": "#268F69",
+		"link": "https://i.imgur.com/PBybpVy.gif"
+	}
 };
 
 var currentobject=0;

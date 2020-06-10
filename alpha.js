@@ -286,6 +286,11 @@ const embedLookupTable = {
 		"color": "#268F69",
 		"link": "https://i.imgur.com/6tCTiJs.gif"
 	},
+"greycat": {
+		"title": "",
+		"color": "#268F69",
+		"link": "https://i.imgur.com/lbVmSZE.gif"
+	},
 	"dangoparty": {
 		"title": "",
 		"color": "#268F69",

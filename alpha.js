@@ -280,6 +280,11 @@ const embedLookupTable = {
 		"title": "",
 		"color": "#268F69",
 		"link": "https://i.imgur.com/CWe13xa.gif"
+	},
+	"dangoparty": {
+		"title": "",
+		"color": "#268F69",
+		"link": "https://i.imgur.com/aOORqGr.gif"
 	}
 };
 

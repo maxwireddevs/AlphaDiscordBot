@@ -265,6 +265,11 @@ const embedLookupTable = {
 		"title": "whitecat.gif",
 		"color": "#268F69",
 		"link": "https://i.imgur.com/PBybpVy.gif"
+	},
+	"whitecatrun": {
+		"title": "whitecatrun.gif",
+		"color": "#268F69",
+		"link": "https://i.imgur.com/dmLkTBA.gif"
 	}
 };
 

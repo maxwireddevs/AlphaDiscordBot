@@ -281,15 +281,30 @@ const embedLookupTable = {
 		"color": "#268F69",
 		"link": "https://i.imgur.com/CWe13xa.gif"
 	},
-"goldencatrun": {
+	"whitecatrub": {
+		"title": "",
+		"color": "#268F69",
+		"link": "https://i.imgur.com/9CAHyQt.gif"
+	},
+	"goldencatrun": {
 		"title": "",
 		"color": "#268F69",
 		"link": "https://i.imgur.com/6tCTiJs.gif"
 	},
-"greycat": {
+	"greycat": {
 		"title": "",
 		"color": "#268F69",
 		"link": "https://i.imgur.com/lbVmSZE.gif"
+	},
+	"greycatwalk": {
+		"title": "",
+		"color": "#268F69",
+		"link": "https://i.imgur.com/oOFTcej.gif"
+	},
+	"greycatsit": {
+		"title": "",
+		"color": "#268F69",
+		"link": "https://i.imgur.com/Ul7TDta.gif"
 	},
 	"dangoparty": {
 		"title": "",
